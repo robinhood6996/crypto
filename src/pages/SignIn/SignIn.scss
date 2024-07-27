@@ -1,0 +1,285 @@
+html,
+body,
+#root{
+  height: 100%;
+}
+
+.sign-card-wrap{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip {
+  font-size: 20px;
+  margin: 40px auto 50px;
+  text-align: center;
+}
+
+.sign-card {
+  overflow: hidden;
+  position: relative;
+  max-width: 900px;
+  width: 90%;
+  height: 550px;
+  margin: 50px auto;
+  background: #fff;
+border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.form {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  transition: transform 1.2s ease-in-out;
+  padding: 50px 30px 0;
+}
+
+.sub-cont {
+  overflow: hidden;
+  position: absolute;
+  left: 70%;
+  top: 0;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  padding-left: 30%;
+  background: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+.sign-card.s--signup .sub-cont {
+  transform: translate3d(-70%, 0, 0);
+}
+
+.sign-card button {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.sign-up.form{
+  width: 100%;
+}
+
+.img {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  padding-top: 360px;
+}
+.img:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  background-image: url("../../assets/images/sign-bg.jpg");
+  background-size: cover;
+  transition: transform 1.2s ease-in-out;
+}
+.img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.sign-card.s--signup .img:before {
+  transform: translate3d(70%, 0, 0);
+}
+.img__text {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+.img__text h2 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.img__text p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.sign-card.s--signup .img__text.m--up {
+  transform: translateX(520px);
+}
+.img__text.m--in {
+  transform: translateX(-520px);
+}
+.sign-card.s--signup .img__text.m--in {
+  transform: translateX(0);
+}
+.sing-in-wrap {
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  width: 100px;
+  height: 36px;
+  margin: 0 auto;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+.sing-in-wrap:after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.sing-in-wrap span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s;
+}
+.sing-in-wrap span.m--in {
+  transform: translateY(-72px);
+}
+.sign-card.s--signup .sing-in-wrap span.m--in {
+  transform: translateY(0);
+}
+.sign-card.s--signup .sing-in-wrap span.m--up {
+  transform: translateY(72px);
+}
+
+
+label span {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+
+.sign-card input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  height: 45px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.sign-card input:hover,
+.sign-card input:focus {
+  border-bottom: 2px solid #099067FF;
+  outline: none;
+
+}
+
+.forgot-pass {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.submit {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #099067FF;
+  text-transform: uppercase;
+}
+
+
+.sign-in {
+  transition-timing-function: ease-out;
+}
+.sign-card.s--signup .sign-in {
+  transition-timing-function: ease-in-out;
+  transition-duration: 1.2s;
+  transform: translate3d(70%, 0, 0);
+}
+
+.sign-up {
+  transform: translate3d(-900px, 0, 0);
+}
+.sign-card.s--signup .sign-up {
+  transform: translate3d(0, 0, 0);
+}
+
+.icon-link {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 32px;
+}
+.icon-link img {
+  width: 100%;
+  vertical-align: top;
+}
+
+@media (max-width: 1399.98px) {  }
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+  .form.sign-in{
+    width: 100%;
+  }
+  .sub-cont{
+    display: none;
+    padding-left: 0;
+  }
+
+  .sign-card.s--signup .sign-in{
+    //transform: translate3d(0, 0, 0);
+    display: none;
+
+  }
+
+  .sign-card.s--signup .sub-cont{
+    display: block;
+  }
+
+  .sign-card.s--signup .sub-cont .img{
+    display: none;
+  }
+  .sign-card{
+    height: 430px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+
