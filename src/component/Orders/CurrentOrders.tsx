@@ -1,6 +1,6 @@
-import { Button, Card, Col, Nav, Row, Tab } from "react-bootstrap";
-import Order from "./Order";
+import { Button, Col, Nav, Row, Tab } from "react-bootstrap";
 import { IoIosAddCircleOutline } from "react-icons/io";
+import Order from "../../pages/Orders/Order";
 
 function CurrentOrders() {
   return (
