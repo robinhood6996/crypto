@@ -20,32 +20,41 @@ const Order = () => {
           </Card.Title>
           <Card.Body className="p-2">
             <div className="w-100">
-                <Table responsive="sm" striped>
-                  <thead>
-                    <tr>
-                      <th className="fs-12px">Investment Time</th>
-                      <th className="fs-12px">Direction</th>
-                      <th className="fs-12px">Scale</th>
-                      <th className="fs-12px">Investment Time</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="text-center">
-                      <td>
-                        <p className="fs-12px text--primary">80000.00</p>
-                      </td>
-                      <td>
-                        <p className="fs-12px text--primary">UP</p>
-                      </td>
-                      <td>
-                        <p className="fs-12px text--primary">50%</p>
-                      </td>
-                      <td>
-                        <p className="fs-12px text--primary">180 s</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </Table>
+              <Table responsive="sm" striped>
+                <thead>
+                  <tr className="text-center">
+                    <th className="fs-12px">Investment Time</th>
+                    <th className="fs-12px">Direction</th>
+                    <th className="fs-12px">Scale</th>
+                    <th className="fs-12px">Investment Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="text-center">
+                    <td>
+                      <p className="fs-12px text--primary">80000.00</p>
+                    </td>
+                    <td>
+                      <Badge bg="success">
+                        <p className="fs-12px text--primary text-white mb-0">
+                          UP
+                        </p>
+                      </Badge>
+                      <Badge bg="danger">
+                        <p className="fs-12px text--primary text-white mb-0">
+                          DOWN
+                        </p>
+                      </Badge>
+                    </td>
+                    <td>
+                      <p className="fs-12px text--primary">50%</p>
+                    </td>
+                    <td>
+                      <p className="fs-12px text--primary">180 s</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
             </div>
             <div className="d-flex justify-content-between">
               <div>
