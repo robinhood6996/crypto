@@ -10,9 +10,9 @@ function Layout() {
     <>
       <header className="header" id="header">
         <nav className="navbar container">
-          <Link to="/">
+          {/* <Link to="/">
             <img src={Logo} alt="logo" height={60} width={80} />
-          </Link>
+          </Link> */}
           <div className="menu" id="menu">
             <ul className="menu-list">
               <li className="menu-item">

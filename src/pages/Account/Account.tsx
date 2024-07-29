@@ -21,16 +21,16 @@ function Account() {
             </div>
           </div>
           <div className="account-navs">
-            <Link to={"/"}>
+            <Link to={"/bindings"}>
               <div className="link my-2">Bindings</div>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/withdraw"}>
               <div className="link my-2">Withdraw</div>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/orders"}>
               <div className="link my-2">Orders</div>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/settings"}>
               <div className="link my-2">Settings</div>
             </Link>
           </div>
