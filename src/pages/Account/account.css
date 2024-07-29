@@ -1,0 +1,11 @@
+.link {
+  background: hsl(162, 88%, 30%);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.custom-card-header.card-header {
+  background-color: #f8f5f2 !important;
+}
