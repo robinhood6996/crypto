@@ -40,11 +40,11 @@ const Order = () => {
                           UP
                         </p>
                       </Badge>
-                      <Badge bg="danger">
+                      {/* <Badge bg="danger">
                         <p className="fs-12px text--primary text-white mb-0">
                           DOWN
                         </p>
-                      </Badge>
+                      </Badge> */}
                     </td>
                     <td>
                       <p className="fs-12px text--primary">50%</p>
